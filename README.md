@@ -179,7 +179,7 @@ curl -X POST http://localhost:8080/api/tasks \
 
 ## 🛠️ Built With
 
-- **HTML** - Primary programming language
+- **JAVA** - Primary programming language
 
 ## 🤝 Contributing
 
