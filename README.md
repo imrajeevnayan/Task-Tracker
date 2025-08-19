@@ -1,14 +1,7 @@
 # Task-Tracker
 
-![JAVA](https://img.shields.io/badge/JAVA-blue?style=for-the-badge) ![License](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge) ![GitHub stars](https://img.shields.io/github/stars/imrajeevnayan/Task-Tracker?style=for-the-badge) ![GitHub forks](https://img.shields.io/github/forks/imrajeevnayan/Task-Tracker?style=for-the-badge)
+**Task Tracker**  is a modern, user-friendly task management application built with Spring Boot and a responsive frontend. It allows users to create, read, update, and delete tasks with a clean UI powered by Tailwind CSS (via CDN) and Inter font. The app features server-side and client-side validation, accessibility, and smooth animations. 🚀
 
-**Task Tracker** is a sleek, modern task management application built with **Spring Boot** and a responsive single-page frontend. It empowers users to manage tasks efficiently with full CRUD operations, a polished UI powered by **Tailwind CSS**, and thoughtful features like validation, accessibility, and animations. 🚀
-
-## 🖼️ Project Screenshot
-
-Here's what Task Tracker looks like in action:
-
-![Task Tracker Screenshot](Screenshot.png)
 ## ✨ Features
 
 - 📋 **CRUD Operations** – Create, read, update, and delete tasks easily.
@@ -19,6 +12,12 @@ Here's what Task Tracker looks like in action:
 - 💾 **In-Memory Database** – Uses H2 for quick development/testing.
 - 🔢 **Task Counter** – Displays total number of tasks.
 - 🌐 **REST API** – Fully API-driven backend, ideal for integration.
+
+## 🖼️ Project Screenshot
+
+Here's what Task Tracker looks like in action:
+
+![Task Tracker Screenshot](Screenshot.png)
 
 
 ## 🎥 Demo
@@ -172,9 +171,10 @@ curl -X POST http://localhost:8080/api/tasks \
 ```
 
 - Expected Response:
+```
 
 {"title":"Title is required"
-
+```
 ### 🌐 Deployment
 
 - Deployment to Heroku/Render is planned.
@@ -258,7 +258,7 @@ The MIT License license is a permissive license that allows for commercial use, 
 - ⭐ Stars: 0
 - 🍴 Forks: 0
 - 🐛 Issues: 0
-- 📝 Language: HTML
+- 📝 Language: JAVA
 
 ---
 
