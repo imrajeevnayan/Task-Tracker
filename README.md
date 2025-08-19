@@ -1,6 +1,6 @@
 # Task-Tracker
 
-![HTML](https://img.shields.io/badge/HTML-blue?style=for-the-badge) ![License](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge) ![GitHub stars](https://img.shields.io/github/stars/imrajeevnayan/Task-Tracker?style=for-the-badge) ![GitHub forks](https://img.shields.io/github/forks/imrajeevnayan/Task-Tracker?style=for-the-badge)
+![JAVA](https://img.shields.io/badge/JAVA-blue?style=for-the-badge) ![License](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge) ![GitHub stars](https://img.shields.io/github/stars/imrajeevnayan/Task-Tracker?style=for-the-badge) ![GitHub forks](https://img.shields.io/github/forks/imrajeevnayan/Task-Tracker?style=for-the-badge)
 
 **Task Tracker** is a sleek, modern task management application built with **Spring Boot** and a responsive single-page frontend. It empowers users to manage tasks efficiently with full CRUD operations, a polished UI powered by **Tailwind CSS**, and thoughtful features like validation, accessibility, and animations. 🚀
 
@@ -72,24 +72,45 @@ cd Task-Tracker
 
 ```
 Task-Tracker/
+├── .gitattributes
 ├── .gitignore
+├── .mvn
+    └── wrapper
+    │   └── maven-wrapper.properties
+├── LICENSE
 ├── README.md
-├── HELP.md
+├── Screenshot.png
+├── mvnw
+├── mvnw.cmd
 ├── pom.xml
-├── src/
-│   └── main/
-│       ├── java/com/example/tasktracker/
-│       │   ├── controller/TaskController.java
-│       │   ├── model/Task.java
-│       │   ├── repository/TaskRepository.java
-│       │   ├── service/TaskService.java
-│       │   └── TaskTrackerApplication.java
-│       └── resources/
-│           ├── static/index.html
-│           └── application.properties
+└── src
+    ├── main
+        ├── java
+        │   └── com
+        │   │   └── example
+        │   │       └── tasktracker
+        │   │           ├── TaskTrackerApplication.java
+        │   │           ├── controller
+        │   │               └── TaskController.java
+        │   │           ├── model
+        │   │               └── Task.java
+        │   │           ├── repository
+        │   │               └── TaskRepository.java
+        │   │           └── service
+        │   │               └── TaskService.java
+        └── resources
+        │   ├── application.properties
+        │   └── static
+        │       └── index.html
+    └── test
+        └── java
+            └── com
+                └── example
+                    └── tasktracker
+                        └── TaskTrackerApplicationTests.java
+
 
 ```
-
 ### Open in STS 4
 
 - Go to: File > Import > Maven > Existing Maven Projects
@@ -138,7 +159,9 @@ curl -X PUT http://localhost:8080/api/tasks/1 \
 
 - Delete a task
 
+```
 curl -X DELETE http://localhost:8080/api/tasks/1
+```
 
 
 - Validation error example
