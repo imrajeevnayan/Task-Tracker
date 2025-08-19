@@ -84,6 +84,93 @@ Task-Tracker/
 
 ```
 
+### Open in STS 4
+
+- Go to: File > Import > Maven > Existing Maven Projects
+-  Select the Task-Tracker folder > Click Finish
+- Right-click project > Maven > Update Project > Click OK
+- Run the Application
+- Right-click TaskTrackerApplication.java > Run As > Spring Boot App
+- Open your browser at: http://localhost:8080
+ 🌍
+ 
+### 🚀 Usage
+
+- Access: Visit http://localhost:8080
+- Create Task: Fill title (required), description, and status → Click Add Task
+- Edit Task: Click Edit or Toggle to modify
+- Delete Task: Click Delete 🗑️
+- H2 Console: http://localhost:8080/h2-console
+- JDBC URL: jdbc:h2:mem:tasktracker
+- Username: sa
+- Password: (blank)
+
+
+### 🧪 Testing the API
+
+Use Postman or cURL:
+
+Get all tasks
+```
+curl http://localhost:8080/api/tasks
+```
+
+
+- Create a task
+```
+curl -X POST http://localhost:8080/api/tasks \
+-H "Content-Type: application/json" \
+-d '{"title":"Test Task","description":"Test description","completed":false}'
+```
+
+- Update a task (replace 1 with task ID)
+```
+curl -X PUT http://localhost:8080/api/tasks/1 \
+-H "Content-Type: application/json" \
+-d '{"title":"Updated Task","description":"Updated","completed":true}'
+```
+
+- Delete a task
+
+curl -X DELETE http://localhost:8080/api/tasks/1
+
+
+- Validation error example
+```
+curl -X POST http://localhost:8080/api/tasks \
+-H "Content-Type: application/json" \
+-d '{"title":"","description":"Test"}'
+```
+
+- Expected Response:
+
+{"title":"Title is required"
+
+### 🌐 Deployment
+
+- Deployment to Heroku/Render is planned.
+
+- Upcoming Steps:
+
+- Switch to persistent DB (e.g., PostgreSQL)
+
+- Compile Tailwind for production (using Tailwind CLI)
+
+## Package app:
+``mvn package``
+
+#🔮 Future Enhancements
+
+- 🔐 Add authentication with Spring Security (JWT)
+
+- 💾 Use persistent DB (MySQL/PostgreSQL)
+
+- 🔍 Search & filter tasks
+
+- 🎨 Replace Tailwind CDN with compiled CSS
+
+- 📄 Add pagination or infinite scroll
+
 ## 🛠️ Built With
 
 - **HTML** - Primary programming language
@@ -94,14 +181,14 @@ We welcome contributions! Here's how you can help:
 
 ### Development Process
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Make your changes
-4. Add tests for your changes
-5. Ensure all tests pass
-6. Commit your changes (`git commit -m 'Add some amazing feature'`)
-7. Push to the branch (`git push origin feature/amazing-feature`)
-8. Open a Pull Request
+- Fork the repository
+- Create your feature branch (`git checkout -b feature/amazing-feature`)
+- Make your changes
+- Add tests for your changes
+- Ensure all tests pass
+- Commit your changes (`git commit -m 'Add some amazing feature'`)
+- Push to the branch (`git push origin feature/amazing-feature`)
+- Open a Pull Request
 
 ### Code Style
 
