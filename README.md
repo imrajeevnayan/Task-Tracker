@@ -8,7 +8,7 @@
 
 Here's what Task Tracker looks like in action:
 
-![Task Tracker Screenshot](screenshot.png)
+![Task Tracker Screenshot](Screenshot.png)
 ## ✨ Features
 
 - 📋 **CRUD Operations** – Create, read, update, and delete tasks easily.
