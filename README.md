@@ -22,7 +22,7 @@ Here's what Task Tracker looks like in action:
 
 ## 🎥 Demo
 
-Live demo coming soon on Render or Heroku. Stay tuned in [Releases](https://github.com/imrajeevnayan/Task-Tracker/releases). 📽️
+Live demo  on Render. Click here [Live Link](https://task-tracker-2ez1.onrender.com/). 📽️
 
 ## 🛠️ Tech Stack
 
