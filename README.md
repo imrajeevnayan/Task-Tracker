@@ -3,6 +3,12 @@
 ![HTML](https://img.shields.io/badge/HTML-blue?style=for-the-badge) ![License](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge) ![GitHub stars](https://img.shields.io/github/stars/imrajeevnayan/Task-Tracker?style=for-the-badge) ![GitHub forks](https://img.shields.io/github/forks/imrajeevnayan/Task-Tracker?style=for-the-badge)
 
 **Task Tracker** is a sleek, modern task management application built with **Spring Boot** and a responsive single-page frontend. It empowers users to manage tasks efficiently with full CRUD operations, a polished UI powered by **Tailwind CSS**, and thoughtful features like validation, accessibility, and animations. 🚀
+
+## 🖼️ Project Screenshot
+
+Here's what Task Tracker looks like in action:
+
+![Task Tracker Screenshot](screenshot.png)
 ## ✨ Features
 
 - 📋 **CRUD Operations** – Create, read, update, and delete tasks easily.
